@@ -1,0 +1,24 @@
+#mapita {
+
+    margin-top: 150px;
+    position: right;
+}
+
+#mapita .map {
+
+    width: 150%;
+    height: 150%;
+}
+
+#mapita .map{
+    position: absolute;
+    top: 100%;
+    left: 150%;
+    transform: translateX(-60%) translateY(-100%);
+    color:white;
+
+}
+
+#register h2 {
+    font-size: 28px;
+}

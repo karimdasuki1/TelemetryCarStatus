@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+
+  <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  
+  <script src="static/js/bootstrap.min.js"></script>
+  -->
+
+  <script type = "text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1> Posición en tiempo real</h1>
+  </header>
+
+  <h2>Seleccione Que vehiculo desea ver</h2>
+
+  <div class="row">
+
+    <div class="column" style="background-color:#aaa;">
+      <h2>vehiculo 1: 
+        <input type="checkbox" id="vehicle1">
+      </h2>
+      <p>Datos: </p>
+        <section>
+          <div id="lat1"></div>
+          <div id="lon1"></div>
+          <div id="time1"></div>
+          <div id="rpm1"></div>
+        </section>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>vehiculo 2:
+        <input type="checkbox" id="vehicle2">
+      </h2>
+      <p>Datos: </p>
+        <section>
+          <div id="lat2"></div>
+          <div id="lon2"></div>
+          <div id="time2"></div>
+          <div id="rpm2"></div>
+        </section>
+    </div>
+
+  </div>
+
+  <div id="map"></div>
+<!--
+<div id="lat"></div>
+<div id="lon"></div>
+<div id="time"></div>
+<div id="map"></div>
+-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZqaumHJb6Zapw_JR9pMuMmmMqMCLu0I&callback=initMap"
+async defer></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+

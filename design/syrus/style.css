@@ -1,0 +1,22 @@
+/*style.css*/
+#map{
+
+  height: 500px;
+  width: 700px;
+  margin: 0 auto ;
+
+  position: fixed;
+  top: 300%;
+  left: 30%;
+  margin: 0 auto ;
+ /* text-align: center; */
+ 
+  transform: translateX(-60%) translateY(47%); 
+  
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+

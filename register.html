@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Register</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Registro Historico de Posiciones</h1>
+    <p>Jorge Aguilar<br>Karim Dasuki<br>Juan De La Hoz<br>Jorge Lambraño</p>
+    </header>
+    <section id = "register">
+        <form action="/action_page.php" id = "datetime_form">
+            Fecha Inicio: <input type = "date" name = "start_calendar" id = "start_calendar" >
+            Hora Inicio: <input type = "time" name = "start_time" id = "start_time" value = "22:00"><br>
+            Fecha Final: <input type = "date" name = "end_calendar" id = "end_calendar" >
+            Hora Final: <input type = "time" name = "end_time" id = "end_time" value = "22:01"><br>
+            <input type = "button" value = "Enviar" onclick = "send_button_function();"><br>
+        </form>
+    </section>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZqaumHJb6Zapw_JR9pMuMmmMqMCLu0I&callback=initMap"
+    async defer></script>
+</body>
+</html>

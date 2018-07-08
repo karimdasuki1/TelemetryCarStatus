@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Register</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="dir.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Registro Historico de direcciones</h1>
+    <p>Jorge Aguilar<br>Karim Dasuki<br>Juan De La Hoz<br>Jorge Lambraño</p>
+    </header>
+    <div>
+        Buscar Por dirección <br>
+        <input id = "address" type = "textbox" value = "Barraquilla, Atlantico"><br>
+        <input type = "button" value = "Enviar Dir." onclick = "send_dir_function();">
+    </div>
+    <div id="map"></div>
+    <table id="table">
+    </table>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZqaumHJb6Zapw_JR9pMuMmmMqMCLu0I&callback=initMap"
+    async defer></script>
+</body>
+</html>
